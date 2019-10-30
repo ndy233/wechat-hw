@@ -1,0 +1,86 @@
+<html>
+<body>
+    
+    <center>
+        
+        <form action="" method="post" onsubmit="return check()">
+    <table cellspacing="30">
+    <caption>
+<a href="http://www.zju.edu.cn/"  target="_blank">注册（点击进入浙江大学主页）</a>
+</caption>
+    <tr>
+      <td align="right">用&nbsp;户&nbsp;名&nbsp; :
+        <input type="text" name="id" required></td>
+      <td>&nbsp;</td>
+    </tr>   
+    <tr>
+      <td align="right">&nbsp;密&nbsp; &nbsp; &nbsp;码 &nbsp;:
+        <input type="password" name="psw" required></td>
+      <td align="right">真实姓名:
+          <input type="text" name="name" required></td>
+    </tr>
+    <tr>
+        <td align="right"> 确认密码 :
+            <input type="password" name="psw" required></td>
+        <td align="right">手机号码:
+            <input type="text" name="phone" required></td>
+      </tr>
+      <tr>
+        <td>&nbsp;性&nbsp; &nbsp; &nbsp;别 &nbsp;: 
+            <input type="radio" name="sex" value="male" checked required>男
+            &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="sex" value="female" required>女</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;民&nbsp; &nbsp; &nbsp;族 &nbsp;: 
+<input type="text" name="race" required></td>
+        <td align="right">&nbsp;邮&nbsp; &nbsp; &nbsp;箱 &nbsp;: 
+<input type="text" name="email" required></td>
+      </tr>
+      <tr >
+        <td colspan="4">&nbsp;爱&nbsp; &nbsp; &nbsp;好 &nbsp;:
+            <input type="checkbox" name="hobby" value="sing">唱歌
+            <input type="checkbox" name="hobby" value="dance" >跳舞 
+            <input type="checkbox" name="hobby" value="sports" >运动
+            <input type="checkbox" name="hobby" value="rap" >rap 
+            <input type="checkbox" name="hobby" value="else" >其他
+          
+          </td>
+        
+      </tr>
+      <tr>
+            <td align="right">&nbsp;国&nbsp; &nbsp; &nbsp;家 &nbsp;:
+ <input type="text" name="id" required></td>
+            <td align="right">&nbsp;城&nbsp; &nbsp; &nbsp;市 &nbsp;: 
+<input type="text" name="id" required></td>
+      </tr>
+    </table>
+          用户头像上传：
+          <input align="left" type="file" name="photo">
+          
+  </br>
+</br> 
+  
+        个人说明：
+    
+        <textarea rows = "10" cols="50">
+            </textarea>   
+      
+          </br>
+         
+            <input  type="submit"  value="立即注册" >
+            <input align="center" name="reset" type=reset value="重置">
+          </center>
+
+
+<script>
+function check(){
+
+	return false;			
+}
+</script>
+</form> 
+
+    </body>
+    </html>
