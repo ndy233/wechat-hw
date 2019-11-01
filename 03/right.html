@@ -1,0 +1,93 @@
+
+<html>
+<meta charset="utf-8">
+<head>
+
+<style>
+.kuang {
+   float: left;
+   margin: 5px;
+   padding: 10px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}   
+</style>
+</head>
+
+<body>
+      <a href="http://www.zju.edu.cn/" target="_blank">
+      <img id="zju" src="https://ndy233.github.io/wechat-hw/01/zju.jpg" width="200" height="200"  style="position: absolute;left:300;top:50" onmouseover="clearInterval(p)" onmouseout="p=setInterval(position,1000);"/>
+      </a>
+      <script>
+             var zju = document.getElementById("zju");
+     // 浏览器窗口宽高
+             const w_width = window.screen.availWidth - 200;
+             const w_height = window.screen.availHeight - 200;
+     // 生成随机位置
+             var width = Math.random()*w_width;
+             var height = Math.random()*w_height;
+             zju.style.left = width;
+             zju.style.top = height;
+     
+             var x=100,y=50;//每秒△距离
+             function position(){
+                 if((width+x)<=0||(width+x)>=w_width){
+                     x=-x;
+                 }//x转向
+                 width=width+x;
+                 if((height+y)<=0||(height+y)>=w_height){
+                     y=-y;
+                 }//y转向
+                 height=height+y;
+     
+             zju.style.left = width;
+             zju.style.top = height;             
+             }
+              
+         var p=setInterval(position,1000);//悬停
+      
+             </script>
+<h2 style="color:#c2a5cf;">    大家好，欢迎来到我的qq空间！（误）</h2>
+<br>
+
+<div class="kuang">
+<h2>倪小淳</h2>
+<p>学号：3180103701</p>
+<br />
+<br />
+ <p style="color:#808069;">真的真的非常非常非常非常非常非常荣幸能选上陈老师的微信小程序课！！！没想到非酋也有翻身的一天！！！希望助教哥哥也手下留情感谢感谢感谢感谢</p>
+</div>
+
+<div class="kuang">
+<h2>家乡</h2>
+<h3 align="center"><a href="https://baike.baidu.com/item/温州/212091" target="_blank">浙江温州</a></h3>
+<br/>
+<h2>爱好</h2>
+<p align="center" style="font-size:20px">沙雕</p>
+</div>
+
+<div class="kuang">
+<h2>专业</h2>
+<br/>
+<p align="center" style="font-size:25px">软件工程</p>
+<br/>
+<br/>
+<br/>
+
+<p>或许以后还有机会可以上陈老师的课吗?</p>
+</div>
+
+<div class="kuang">
+<p align="center" style="font-size:10px">
+<a href="http://www.zju.edu.cn/" target="_blank">
+<img src="https://ndy233.github.io/wechat-hw/01/zju.jpg" width="288" height="288" />
+</a>
+点击图片进入学校首页
+</p>
+
+</div>
+
+</body>
+
+</html>
